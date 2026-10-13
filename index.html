@@ -77,6 +77,18 @@ body{padding:0}
 .why{margin-top:14px;min-height:0}
 .quote{margin-top:14px}
 .foot{margin:0;padding:6px 0 14px}
+
+/* true full-bleed on every screen */
+html,body{width:100%;min-height:100%;margin:0;background:#000}
+#app{width:100%;max-width:none;margin:0}
+.hero img{width:100%;height:100%;object-fit:cover;object-position:center 12%}
+.count,.quote,.foot{width:100%;max-width:520px;margin-left:auto;margin-right:auto}
+.why{width:calc(100% - 40px);max-width:480px;margin-left:auto;margin-right:auto}
+.quote{width:calc(100% - 56px)}
+@media (min-aspect-ratio:1/1){
+  .hero .bg{inset:-5%;filter:blur(30px) saturate(1.3) brightness(.7)}
+  .hero img{object-fit:contain;object-position:center top}
+}
 </style>
 </head>
 <body>
